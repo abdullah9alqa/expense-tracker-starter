@@ -1,0 +1,28 @@
+/* Expense Tracker — small custom touches only.
+   Everything else comes from Bootstrap classes directly in the HTML. */
+
+.card {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+/* Keep category badges a consistent width so the table looks tidy */
+.badge {
+  min-width: 90px;
+}
+
+/* ============================================
+   Summary cards — CSS Grid (Phase 3 requirement)
+   3 equal columns on desktop, 1 column on small screens.
+   ============================================ */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 767.98px) {
+  .summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
